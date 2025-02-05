@@ -15,7 +15,7 @@ export function Connect() {
   const { isConnecting, connector: activeConnector } = useAccount();
   const { disconnect } = useDisconnect();
   const { data: txGasEstimate } = useEstimateGas({
-    to: '0x000000000000000000000000000000000000beef',
+    to: '0xe4d2ba7619c7ee526241cf1c229679780f70a3b2',
     value: BigInt('0'),
   });
 
@@ -53,7 +53,7 @@ export function Connect() {
               onClick={() =>
                 sendTransactionAsync?.({
                   gas: txGasEstimate,
-                  to: '0x000000000000000000000000000000000000beef',
+                  to: '0xe4d2ba7619c7ee526241cf1c229679780f70a3b2',
                   value: BigInt('0'),
                 })
               }
