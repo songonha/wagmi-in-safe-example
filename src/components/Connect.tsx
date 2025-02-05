@@ -23,7 +23,7 @@ export function Connect() {
 
   const { data } = useSimulateContract({
     // wagmi mint example contract
-    address: '0xFBA3912Ca04dd458c843e2EE08967fC04f3579c2',
+    address: '0xe4d2ba7619c7ee526241cf1c229679780f70a3b2', //base sepolia
     abi: [
       {
         name: 'mint',
